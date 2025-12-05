@@ -21,14 +21,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Buat tombol
     keyboard = [[
         InlineKeyboardButton(
-            text="COLLECT YAFS", 
+            text="COLLECT WOOT", 
             web_app=WebAppInfo(url=MINIAPP_URL)
         )
     ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     
     await update.message.reply_text(
-        "Hi.. Welcome 👋🏻\nEarn $YAFS every day easily now! 🎉",
+        "Hi.. Welcome 👋🏻\nClaim WOOT by farming easily now\nAnd collect limited rewards for you! 🎉",
         reply_markup=reply_markup
     )
 
